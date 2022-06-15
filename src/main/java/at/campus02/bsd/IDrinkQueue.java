@@ -1,8 +1,14 @@
+/**
+ * @author Markus Neuhauser
+ */
+
 package at.campus02.bsd;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+
+
 
 public class IDrinkQueue implements IQueue{
 
@@ -10,6 +16,11 @@ public class IDrinkQueue implements IQueue{
 
     private int maxSize = 5;
 
+    /**
+     * add object to queue
+     * @param obj
+     * @return return true if adding works, otherwise false
+     */
     @Override
     public boolean offer(Object obj) {
         if (elements.size() != maxSize)
@@ -41,6 +52,10 @@ public class IDrinkQueue implements IQueue{
         
     }
 
+    /**
+     * gives first element but does not delete, null if nothing there
+     * @return element
+     */
     @Override
     public Object peek() {
         Object element;
@@ -52,6 +67,10 @@ public class IDrinkQueue implements IQueue{
         return element;
     }
 
+    /**
+     * like peek but NoSuchElementException instead of null
+     * @return element
+     */
     @Override
     public Object element() {
         Object element = peek();
