@@ -1,3 +1,7 @@
+/**
+ * @author Markus Neuhauser
+ */
+
 package at.campus02.bsd;
 /**
  * StringQueue class
@@ -21,6 +25,11 @@ public class StringQueue implements IQueue {
     maxSize = maxSize;
   }
 
+  /**
+   * add object to queue
+   * @param obj
+   * @return return true if adding works, otherwise false
+   */
   @Override
   public boolean offer(Object obj) {
     if (elements.size() != maxSize)
@@ -59,7 +68,10 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-
+  /**
+   * gives first element but does not delete, null if nothing there
+   * @return element
+   */
   @Override
   public String peek() {
     String element;
@@ -70,7 +82,10 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-
+  /**
+   * like peek but NoSuchElementException instead of null
+   * @return
+   */
   @Override
   public String element() {
     String element = peek();
