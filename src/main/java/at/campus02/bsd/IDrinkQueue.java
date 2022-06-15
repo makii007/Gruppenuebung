@@ -2,6 +2,7 @@ package at.campus02.bsd;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class IDrinkQueue implements IQueue{
 
@@ -16,12 +17,23 @@ public class IDrinkQueue implements IQueue{
 
     @Override
     public Object poll() {
-        return null;
+        Object element = peek();
+
+        if (elements.size() != 0) {
+            elements.remove(element);
+        }
+        return element;
+
     }
 
     @Override
     public Object remove() {
-        return null;
+        Object element = poll();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
+        
     }
 
     @Override
