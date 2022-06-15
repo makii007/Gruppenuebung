@@ -7,14 +7,14 @@
 ## Tasklist
 ### [ ] Create a tasklist
 
-### [x ] Add personal developer information to *pom.xml*
+### [xx] Add personal developer information to *pom.xml*
 ### [x] Add Git Repo Adress to *pom.xml*
 
 ### [x] Create a new branch for Bug fixing 
 ### [x] Find and correct bugs in the code
 ### [x] Merge the result back to the main branch
 
-### [ ] Integrate Drinks Interface and necessesery class
+### [ ] Integrate Drinks Interface and necessary class
 ### [ ] Create a Queue Version 
 ### [ ] Add methods to the Interface
 ### [ ] Create JavaDoc Comments for both Variants
