@@ -1,4 +1,8 @@
 package at.campus02.bsd;
+/**
+ * IDrinkQueue class
+ * @author Ivana Lehki
+ */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +24,11 @@ public class IDrinkQueue implements IQueue{
         return true;
     }
 
+    /**
+     *
+     * @return first element
+     * delete first element
+     */
     @Override
     public Object poll() {
         Object element = peek();
@@ -31,6 +40,11 @@ public class IDrinkQueue implements IQueue{
 
     }
 
+    /**
+     *
+     * @return first element
+     * @exception throws NoSuchElementException if element doesn't exist
+     */
     @Override
     public Object remove() {
         Object element = poll();

@@ -1,4 +1,8 @@
 package at.campus02.bsd;
+/**
+ * StringQueue class
+ * @author Ivana Lehki
+ */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +31,11 @@ public class StringQueue implements IQueue {
     return true;
   }
 
+  /**
+   *
+   * @return first element
+   * delete first element
+   */
   @Override
   public String poll() {
     String element = peek();
@@ -37,6 +46,11 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  /**
+   *
+   * @return first element
+   * @exception throws NoSuchElementException if element doesn't exist
+   */
   @Override
   public String remove() {
     String element = poll();
