@@ -1,12 +1,10 @@
 /**
+ * StringQueue class
+ * @author Ivana Lehki
  * @author Markus Neuhauser
  */
 
 package at.campus02.bsd;
-/**
- * StringQueue class
- * @author Ivana Lehki
- */
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,12 +1,10 @@
 /**
+ * IDrinkQueue class
+ * @author Ivana Lehki
  * @author Markus Neuhauser
  */
 
 package at.campus02.bsd;
-/**
- * IDrinkQueue class
- * @author Ivana Lehki
- */
 
 import java.util.ArrayList;
 import java.util.List;
