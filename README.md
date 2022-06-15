@@ -7,12 +7,12 @@
 ## Tasklist
 ### [ ] Create a tasklist
 
-### [ ] Add personal developer information to *pom.xml*
-### [ ] Add Git Repo Adress to *pom.xml*
+### [x ] Add personal developer information to *pom.xml*
+### [x] Add Git Repo Adress to *pom.xml*
 
-### [ ] Create a new branch for Bug fixing 
-### [ ] Find and correct bugs in the code
-### [ ] Merge the result back to the main branch
+### [x] Create a new branch for Bug fixing 
+### [x] Find and correct bugs in the code
+### [x] Merge the result back to the main branch
 
 ### [ ] Integrate Drinks Interface and necessesery class
 ### [ ] Create a Queue Version 
