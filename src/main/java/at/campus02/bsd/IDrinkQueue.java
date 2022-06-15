@@ -12,7 +12,12 @@ public class IDrinkQueue implements IQueue{
 
     @Override
     public boolean offer(Object obj) {
-        return false;
+        if (elements.size() != maxSize)
+            elements.add(obj);
+        else
+            return false;
+
+        return true;
     }
 
     @Override
@@ -38,11 +43,21 @@ public class IDrinkQueue implements IQueue{
 
     @Override
     public Object peek() {
-        return null;
+        Object element;
+        if (elements.size() > 0)
+            element = elements.get(0);
+        else
+            element = null;
+
+        return element;
     }
 
     @Override
     public Object element() {
-        return null;
+        Object element = peek();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
     }
 }
