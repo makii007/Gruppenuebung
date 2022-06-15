@@ -1,5 +1,5 @@
 /**
- * IDrinkQueue class
+ * DrinkQueue class
  * @author Ivana Lehki
  * @author Markus Neuhauser
  */
@@ -12,7 +12,7 @@ import java.util.NoSuchElementException;
 
 
 
-public class IDrinkQueue implements IQueue{
+public class DrinkQueue implements IQueue{
 
     private List<Object> elements = new ArrayList<Object>();
 
