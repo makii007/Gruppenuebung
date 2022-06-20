@@ -10,6 +10,10 @@ public class DrinkTesting {
     Liquid liquid;
     SimpleDrink alcoholicDrink, drink;
 
+    /**
+     * Implementing a Liquid object and a SimpleDrink object for testing
+     */
+
     @BeforeEach
     void setUp(){
         alcoholicLiquid = new Liquid("Welschriesling", 0.75, 15);
@@ -18,7 +22,7 @@ public class DrinkTesting {
         drink = new SimpleDrink("Fruchtsaft", liquid);
     }
 
-    //Tests for Drink.java + SimpleDrink.java
+    // Tests for Drink.java and SimpleDrink.java
 
     @Test
     void VolumeTesting(){

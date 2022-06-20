@@ -16,6 +16,10 @@ public class StringQueueTesting {
     StringQueue filledStringQueue;
     StringQueue emptyStringQueue;
 
+    /**
+     * setting up a test list and a StringQueue
+     * Implementing some elements for testing and adding those to both lists.
+     */
     @BeforeEach
         void setUp(){
         testingElements = new ArrayList<String>();
@@ -55,6 +59,9 @@ public class StringQueueTesting {
         Assertions.assertEquals(testingElements.get(0),filledStringQueue.peek());
     }
 
+    /**
+     * Removing element from filled and empty list
+     */
     @Test
         void removeTesting(){
         testingElements.remove(0);
@@ -67,6 +74,10 @@ public class StringQueueTesting {
 
         assertThrows(NoSuchElementException.class, () -> {emptyStringQueue.remove();});
     }
+
+    /**
+     * Removing element from filled and empty list
+     */
     @Test
         void pollTesting(){
         testingElements.remove(0);
@@ -80,10 +91,12 @@ public class StringQueueTesting {
         Assertions.assertNull(emptyStringQueue.poll());
     }
 
+    /**
+     * searching element with filled and empty list
+     */
     @Test
         void elementTesting(){
         Assertions.assertEquals(testingElements.get(0),filledStringQueue.element());
         assertThrows(NoSuchElementException.class, () -> {emptyStringQueue.element();});
-
     }
 }
