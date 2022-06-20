@@ -1,14 +1,11 @@
-<project name="Drinks Documentation Demo">
+<project name="Neuhauser und Lehki Drinks">
     <publishDate position="right"/>
     <version position="left"/>
     <body>
-        <menu name="Overview">
-            <item name="Introduction" href="index.html"/>
-            <item name="Test" href="test.html"/>
-            <item name="Drinks" href="drinks.html"/>
+        <menu name="Arbeitsaufteilung">
+            <item name="Neuhauser Markus" href="neuhauser.md"/>
+            <item name="Lehki Ivana" href="lehki.md"/>
         </menu>
         <menu ref="reports"/>
-        <menu ref="parent"/>
-        <menu ref="modules"/>
     </body>
 </project>
