@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class DrinkQueueTesting {
 
@@ -13,6 +14,7 @@ public class DrinkQueueTesting {
     private static Liquid testLiquid, testLiquid1, testLiquid2, testLiquid3,
             testLiquid4;
     DrinkQueue drinkQueue;
+    DrinkQueue noElementsDrinkQueue;
 
     @BeforeEach
     void setUp(){
@@ -36,11 +38,14 @@ public class DrinkQueueTesting {
         drinkQueue.offer(testLiquid2);
         drinkQueue.offer(testLiquid3);
         drinkQueue.offer(testLiquid4);
+
+        noElementsDrinkQueue = new DrinkQueue(5);
     }
 
     @Test
     void offerTest(){
         Assertions.assertEquals(testElements, drinkQueue.elements);
+        Assertions.assertFalse(drinkQueue.offer(testLiquid));
     }
 
     @Test
@@ -59,6 +64,8 @@ public class DrinkQueueTesting {
         drinkQueue.remove();
 
         Assertions.assertEquals(testElements, drinkQueue.elements);
+        Assertions.assertThrows(NoSuchElementException.class,
+                () -> {noElementsDrinkQueue.remove();});
     }
 
     @Test
