@@ -1,4 +1,4 @@
-# Contrinutions from Ivana Lehki
+# Contributions from Ivana Lehki
 
 #### - Added personal developer Information to *pom.xml*
 #### - Added Git Repo Adress to *pom.xml*
