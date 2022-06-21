@@ -19,10 +19,10 @@
 ### [xx] Create JavaDoc Comments for both Variants
 
 ### [xx] Create Test - 100% needed
-### [ ] Write JavaDoc & Comments to the Tests
+### [xx ] Write JavaDoc & Comments to the Tests
 
 ### [xx] Create maven site
 ### [x ] Integrate and Adapt overwiev Information, Test Statiscs(jacoco) and API Documentation
 
-### [xx] Each member creates own Markdown file with *last.md*
+### [xx] Each member creates own Markdown file with *lastname.md*
 
