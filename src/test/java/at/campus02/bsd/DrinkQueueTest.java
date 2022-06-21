@@ -8,6 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * Test Class fir DrinkQueue.java
+ * @author Ivana Lehki
+ */
 public class DrinkQueueTest {
 
     private List<Object> testElements;
@@ -16,6 +20,11 @@ public class DrinkQueueTest {
     DrinkQueue drinkQueue;
     DrinkQueue noElementsDrinkQueue;
 
+    /**
+     * Implementing setUp() that is executed each time before Testing
+     * testElements Object List creates Objects to be tested
+     * drinkQueue und noElementsDrinkQueue are Objects in tests
+     */
     @BeforeEach
     void setUp(){
         testElements = new ArrayList<Object>();
@@ -42,12 +51,18 @@ public class DrinkQueueTest {
         noElementsDrinkQueue = new DrinkQueue(5);
     }
 
+    /**
+     * offerTest() tests the offer() Method in DrinkQueue.java
+     */
     @Test
     void offerTest(){
         Assertions.assertEquals(testElements, drinkQueue.elements);
         Assertions.assertFalse(drinkQueue.offer(testLiquid));
     }
 
+    /**
+     * pollTest() tests the poll() Method in DrinkQueue.java
+     */
     @Test
     void pollTest(){
         testElements.remove(0);
