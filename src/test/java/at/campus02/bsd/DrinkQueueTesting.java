@@ -76,6 +76,8 @@ public class DrinkQueueTesting {
     @Test
     void elementTest(){
         Assertions.assertEquals(testElements.get(0), drinkQueue.element());
+        Assertions.assertThrows(NoSuchElementException.class,
+                () -> {noElementsDrinkQueue.element();});
     }
 
 
