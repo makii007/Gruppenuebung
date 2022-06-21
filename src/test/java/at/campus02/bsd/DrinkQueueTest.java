@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
- * Test Class fir DrinkQueue.java
+ * Test Class for DrinkQueue.java
  * @author Ivana Lehki
  */
 public class DrinkQueueTest {
@@ -72,6 +72,11 @@ public class DrinkQueueTest {
         Assertions.assertEquals(testElements, drinkQueue.elements);
     }
 
+    /**
+     * removeTest() tests the remove() Method in DrinkQueue.java
+     * thrown Exception in the Method is also tested by remove() of the empty
+     * List
+     */
     @Test
     void removeTest(){
         testElements.remove(0);
@@ -83,11 +88,19 @@ public class DrinkQueueTest {
                 () -> {noElementsDrinkQueue.remove();});
     }
 
+    /**
+     * peekTest() tests the peek() Method in DrinkQueue.java
+     */
     @Test
     void peekTest(){
         Assertions.assertEquals(testElements.get(0), drinkQueue.peek());
     }
 
+    /**
+     * elementTest() tests the element() Method in DrinkQueue.java
+     * thrown Exception in the Method is tested by searching an Element in an
+     * empty List
+     */
     @Test
     void elementTest(){
         Assertions.assertEquals(testElements.get(0), drinkQueue.element());
