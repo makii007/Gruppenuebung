@@ -14,10 +14,13 @@ import java.util.NoSuchElementException;
 
 public class DrinkQueue implements IQueue{
 
-    private List<Object> elements = new ArrayList<Object>();
+    public List<Object> elements = new ArrayList<Object>();
 
     private int maxSize = 5;
 
+    public DrinkQueue(int maxsize) {
+        maxSize = maxSize;
+    }
     /**
      * add object to queue
      * @param obj
