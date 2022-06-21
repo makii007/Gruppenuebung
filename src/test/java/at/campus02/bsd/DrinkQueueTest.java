@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class DrinkQueueTesting {
+public class DrinkQueueTest {
 
     private List<Object> testElements;
     private static Liquid testLiquid, testLiquid1, testLiquid2, testLiquid3,
