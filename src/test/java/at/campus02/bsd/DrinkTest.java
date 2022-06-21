@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test class for Drink.java, Liquid.Java, SimpleDrink.java
+ * @author Markus Neuhauser
+ */
 public class DrinkTest {
     Liquid alcoholicLiquid;
     Liquid liquid;

@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
- * Test Class for DrinkQueue.java
+ * Test class for DrinkQueue.java
  * @author Ivana Lehki
  */
 public class DrinkQueueTest {

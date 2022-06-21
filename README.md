@@ -1,8 +1,8 @@
 # Gruppenuebung
 
 ## Gruppenmietglieder:
-### Neuhauser Markus
-### Lehki Ivana
+### [Neuhauser Markus](src/site/markdown/neuhauser.md)
+### [Lehki Ivana](src/site/markdown/lehki.md)
 
 ## Tasklist
 
